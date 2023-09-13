@@ -1,0 +1,36 @@
+@import url(../../utils/color.css);
+
+.card {
+   width: fit-content;
+   padding: 1rem;
+   border: 1px solid var(--black);
+   border-radius: 0.6rem;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.tag {
+   border: 1px solid var(--black);
+   border-radius: 5rem;
+   height: min-content;
+   min-width: max-content;
+   padding: 0.25rem 0.5rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.tag-wrapper {
+   max-width: 20rem;
+
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.5rem;
+}
+
+.video {
+   width: 20rem;
+}
