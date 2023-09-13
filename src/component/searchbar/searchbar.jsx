@@ -45,6 +45,7 @@ function Searchbar() {
       return () => {
          debouncedSearch.cancel();
       };
+      /* eslint-disable-next-line */
    }, [query]);
 
    const handleSearch = (val) => {
