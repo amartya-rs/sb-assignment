@@ -11,8 +11,12 @@ function HomePage() {
       <div>
          <Header />
          <div className="home">
-            {videos?.length > 0 && videos.map((video) => <Card data={video} />)}
-            {isLoading && <h3>Loading...</h3>}
+            {isLoading ? (
+               <h3>Loading...</h3>
+            ) : (
+               videos?.length > 0 &&
+               videos.map((video) => <Card data={video} />)
+            )}
          </div>
       </div>
    );
